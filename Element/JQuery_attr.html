@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a id="target" href="http://opentutorials.org">opentutorials</a>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+	var t = $('#target');
+	console.log(t.attr('href'));
+	t.attr('title', 'opentutorials');
+	t.removeAttr('title');
+</script>
+</body>
+</html>
