@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="target" id="target1">
+		target 1
+	</div>
+
+	<div id="source">source</div>
+
+	<input type="button" value="append source to target1" id="btn1" />
+	<script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$('#btn1').click(function(){
+			$('#target1').append('#source');
+		})
+	</script>
+</body>
+</html>

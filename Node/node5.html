@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+	<li>HTML</li>
+	<li>CSS</li>
+	<li id='target'>JavaScript</li>
+</ul>
+<input type="button" onclick="callReplaceChild();" value="removeChild()" />
+<script>
+	function callReplaceChild(){
+		var a = document.creatElement('a');
+		a.setAttribute('href', 'http://www.naver.com');
+		a.appentChild(document.createTextNode('Web Browser'))
+
+		var target = document.getElementById('target');
+		target.replaceChild(a, target.firstChild);
+	}
+</script>
+</body>
+</html>
