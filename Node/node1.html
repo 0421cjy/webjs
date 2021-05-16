@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body id="start">
+<ul>
+	<li><a href="532">html</a></li>
+	<li><a href="./533">css</a></li>
+	<li><a href="./534">JavaScript</a>
+		<ul>
+			<li><a href="./535">JavaScipt Core</a></li>
+			<li><a href="./536">DOM</a></li>
+			<li><a href="./537">BOM</a></li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+<script>
+var s = document.getElementById('start');
+console.log(1, s.fristChild);
+var ul = s.firstChild.nextSibling
+console.log(2, ul);
+console.log(2, ul.nextSibling);
+console.log(2, ul.nextSibling.nextSibling);
+console.log(2, ul.childNodes);
+console.log(2, ul.childNodes[1]);
+console.log(2, ul.parentNode);
+
+</script>
+</html>
